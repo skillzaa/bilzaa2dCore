@@ -1,4 +1,4 @@
-module.exports = function drawArc(attributes){
+Metal.prototype.drawArc = function (attributes){
 this.ctx.save();
 
 this.ctx.beginPath();

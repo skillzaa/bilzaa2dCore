@@ -5,18 +5,11 @@ const log = console.log;
 const  EXTENSION = '.js';
 
 /////////////////////setup/////////////////////////////////////
-const homeDir = "./src/animation/";
-const targetDir = "./testSrc/animation/";
+const homeDir = "./intermediateBundle/";
+const targetDir = "./intermediateReqBundle/";
 ////////////////////////------------Paths----///////////////
 const paths = [
-{homeDir : "./src", targetDir: "./testSrc" },
-{homeDir : "./src/animation/", targetDir: "./testSrc/animation/"},
-{homeDir : "./src/animation/base", targetDir: "./testSrc/animation/base"},
-{homeDir : "./src/metal/", targetDir: "./testSrc/metal/"},
-{homeDir : "./src/modules/", targetDir: "./testSrc/modules/"},
-{homeDir : "./src/shapes/", targetDir: "./testSrc/shapes/"},
-{homeDir : "./src/shapes/baseShape/", targetDir: "./testSrc/shapes/baseShape/"},
-{homeDir : "./src/shapes/shape/", targetDir: "./testSrc/shapes/shape/"}
+{homeDir : "./intermediateBundle", targetDir: "./intermediateReqBundle" }
 ];
 //.................................
 paths.forEach(path => {
@@ -54,7 +47,7 @@ let myInterface = readline.createInterface({
   let final = ""
   myInterface.on('line', function (line) {
   if(line.includes("export default")){
-      log("export changed to module");
+      log(`export default changed to require on line : ${line}`);
       final += "\n";
       final += line.replace("export default", "module.exports = ")
   } else if (line.includes("import")){

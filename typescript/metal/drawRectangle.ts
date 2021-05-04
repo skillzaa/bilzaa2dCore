@@ -1,4 +1,4 @@
-module.exports = function drawRectangle(attributes) {
+Metal.prototype.drawRectangle = function (attributes) {
     this.ctx.save();
 
     this.getCtxValues(attributes);

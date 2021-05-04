@@ -6,12 +6,13 @@
              
      "declaration": true,                   
     
-     "outDir": "src/",                        
-     "rootDir": "typescript",                     
+     "outDir": "intermediateBundle/",                        
+     "rootDir": "./src",                     
     "strict": true,                          
     "noImplicitAny": false,
     "esModuleInterop": true,                 
     "skipLibCheck": true,                    
   
-  }
+  },
+  "exclude": ["./typescript"]
 }

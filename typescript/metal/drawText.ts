@@ -1,4 +1,4 @@
-module.exports = function drawText(attributes){
+Metal.prototype.drawText = function (attributes){
 
 this.saveCtx();  
 this.getCtxValues(attributes);
