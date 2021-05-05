@@ -38,12 +38,13 @@ return attributes;
 }
 //====================================================
 // export default getBaseAttributes;
-import ArrayOfObjects from './arrayOfObjects.js';
+// import ArrayOfObjects from './arrayOfObjects.js';
+import IArrayOfObjects from '../../interfaces/IArrayOfObjects';
 import Generators from './generators.js';
 
 
 export default class BaseShape{  
-public attributes:InstanceType<typeof ArrayOfObjects>; 
+public attributes:IArrayOfObjects; 
 animations: object[];
 protected generators:InstanceType<typeof Generators>;
 
@@ -51,6 +52,7 @@ constructor(name) {
 this.attributes = getBaseAttributes(name); 
 this.animations = [];   
 this.generators = new Generators();
+this.attributes.
 }
 
 preUpdate(){}

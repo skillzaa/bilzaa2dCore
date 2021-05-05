@@ -2,11 +2,13 @@
  * 1--every objects must have a unique "name"  field
  * 2--every OBJECT MUST HAVE "value" field.
  */
+import IArrayOfObjects from "../../interfaces/IArrayOfObjects";
+
 import Validator from "./validator.js"; 
 const val = new Validator();
 // console.log(val);
 // val.isNumber("string",true);
-export default  class ArrayOfObjects{
+export default  class ArrayOfObjects implements IArrayOfObjects{
 public data:[];        
 constructor(){
     this.data=[];

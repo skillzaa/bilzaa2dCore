@@ -1,5 +1,7 @@
+import IaniData from "../../interfaces/IaniData";
+import IBaseGenerator from "../../interfaces/IBaseGenerator";
 
-export default class BaseGenerator{  
+export default class BaseGenerator implements IBaseGenerator{  
             attributeToAnimateName:string;
             fromSecond:number;   
             toSecond:number;

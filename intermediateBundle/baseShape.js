@@ -33,15 +33,14 @@ function getBaseAttributes(name) {
     //--20 items
     return attributes;
 }
-//====================================================
-// export default getBaseAttributes;
-import ArrayOfObjects from './arrayOfObjects.js';
 import Generators from './generators.js';
 export default class BaseShape {
     constructor(name) {
         this.attributes = getBaseAttributes(name);
         this.animations = [];
         this.generators = new Generators();
+        this.attributes.
+        ;
     }
     preUpdate() { }
     postUpdate() { }

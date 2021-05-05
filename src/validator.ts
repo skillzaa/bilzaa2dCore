@@ -1,10 +1,10 @@
 
 //module.exports = class Validator {
 export default class Validator {
-throwExceptionFlag:boolean;
+// throwExceptionFlag:boolean;
 
 constructor(){
-this.throwExceptionFlag = false;
+// this.throwExceptionFlag = false;
 }//const
 
 isNumber(no:number,shout=false,message="This is not a Number"){

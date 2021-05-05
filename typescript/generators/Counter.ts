@@ -1,7 +1,9 @@
+import BaseGenerator from "../../src/baseGenerator";
+
 class Counter extends BaseGenerator{
 private milliPerPixConst:number;
 
-constructor(aniData,argsForAlgo={}){
+constructor(aniData,argsForAlgo:{}={}){
     super(aniData,argsForAlgo);
 // this.    
 this.milliPerPixConst = this.milliPerPix();    
@@ -20,7 +22,7 @@ if (this.isTimeValid(currentSecondMilli)===false){
 const timeDifferenceInMilli = this.currentTimeDifferenceInMilli(currentSecondMilli);
 
 const preAns = (timeDifferenceInMilli / this.milliPerPixConst );
-let ans = "";
+let ans = 0;
 
 if(this.argsForAlgo.from < this.argsForAlgo.to ){
     ans = (timeDifferenceInMilli / this.milliPerPixConst ) + this.argsForAlgo.from;

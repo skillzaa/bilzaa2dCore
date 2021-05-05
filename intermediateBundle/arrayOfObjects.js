@@ -1,7 +1,3 @@
-/**
- * 1--every objects must have a unique "name"  field
- * 2--every OBJECT MUST HAVE "value" field.
- */
 import Validator from "./validator.js";
 const val = new Validator();
 // console.log(val);
