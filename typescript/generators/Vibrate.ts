@@ -1,4 +1,6 @@
-class Vibrate extends BaseGenerator{
+import BaseGenerator from "../BaseGenerator.js";
+
+export default class Vibrate extends BaseGenerator{
 constructor(aniData,argsForAlgo={}){
     super(aniData,argsForAlgo);
     this.state.previous = 0;

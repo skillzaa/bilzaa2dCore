@@ -1,4 +1,6 @@
-class RandomColors extends BaseGenerator{
+import BaseGenerator from "../BaseGenerator.js";
+
+export default class RandomColors extends BaseGenerator{
 constructor(aniData,argsForAlgo={}){
     super(aniData,argsForAlgo);
     this.state.previous = 0;

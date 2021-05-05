@@ -1,5 +1,6 @@
-class Rectangle extends BaseShape{
-  animations:RectangleAnimations;
+import BaseShape from "../BaseShape.js";
+
+export default class Rectangle extends BaseShape{
   constructor(name) {
     super(name);
     

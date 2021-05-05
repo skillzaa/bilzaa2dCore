@@ -1,6 +1,6 @@
-import BaseGenerator from "../../src/baseGenerator";
+import BaseGenerator from "../BaseGenerator.js";
 
-class Counter extends BaseGenerator{
+export default class Counter extends BaseGenerator{
 private milliPerPixConst:number;
 
 constructor(aniData,argsForAlgo:{}={}){
@@ -60,4 +60,3 @@ isTimeValid(currentSecondMilli:number){
 }
 //-------------------------------------------------------------    
 }
-//module.exports = Linear;

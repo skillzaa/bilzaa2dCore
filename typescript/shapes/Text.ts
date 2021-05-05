@@ -1,4 +1,6 @@
-class Text extends BaseShape {
+import BaseShape from "../BaseShape.js";
+
+export default class Text extends BaseShape {
 // #hidden:string;
 constructor(name) {      
 super(name);  
