@@ -1,11 +1,11 @@
-import ArrayOfObjects from "./arrayOfObjects.js";
 import BaseGenerator from "./baseGenerator.js";
-f:BaseGenerator;
+
+
 export default  class Generators {
-data:InstanceType<typeof ArrayOfObjects>;
+data:object[];
 
 constructor(){
-this.data = new ArrayOfObjects();    
+this.data = [];    
 }
 
 addCounter(
@@ -27,7 +27,7 @@ if(fromSecond > toSecond){throw new Error("From second can not be bigger than to
     };
     const argsForAlgo = { from: from, to:to};
 const a = new Counter(aniData,argsForAlgo);        
-this.data.add(a);
+this.data.push(a);
 return a;
 }
 addVibrate(
@@ -46,7 +46,7 @@ addVibrate(
     };
     const argsForAlgo = { timeGap: timeGap, deviation:deviation};
 const a = new Vibrate(aniData,argsForAlgo);        
-this.data.add(a);
+this.data.push(a);
 return a;
 }
 addRandomColors(
@@ -62,7 +62,7 @@ addRandomColors(
         readOnlyElementAttrNames:readOnlyElementAttrNames
     };
 const a = new RandomColors(aniData,{});
-this.data.add(a);
+this.data.push(a);
 return a;
 }
 //////////////////////////////////////////////////
@@ -73,6 +73,7 @@ private milliPerPixConst:number;
 
 constructor(aniData,argsForAlgo={}){
     super(aniData,argsForAlgo);
+// this.    
 this.milliPerPixConst = this.milliPerPix();    
 }
 

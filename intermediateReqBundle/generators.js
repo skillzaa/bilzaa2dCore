@@ -1,5 +1,6 @@
-import BaseGenerator from "./baseGenerator.js";
-export default class Generators {
+
+const BaseGenerator = require("./baseGenerator.js");
+module.exports =  class Generators {
     constructor() {
         this.data = [];
     }

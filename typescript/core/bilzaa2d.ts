@@ -3,6 +3,10 @@ import Shapes  from "./shapes.js";
 import Metal  from "./metal.js";
 
 export default  class Bilzaa2d {
+public playHead:PlayHead;    
+public metal:Metal;    
+public shapes:Shapes;    
+public globals:{};    
     constructor() {
         //    this.premades = new Premades();
         this.playHead = new PlayHead();

@@ -3,6 +3,7 @@ private milliPerPixConst:number;
 
 constructor(aniData,argsForAlgo={}){
     super(aniData,argsForAlgo);
+// this.    
 this.milliPerPixConst = this.milliPerPix();    
 }
 

@@ -1,12 +1,8 @@
-import PlayHead  from "./playHead.js";
-import Shapes  from "./shapes.js";
-import Metal  from "./metal.js";
 
-export default  class Bilzaa2d {
-public playHead:PlayHead;    
-public metal:Metal;    
-public shapes:Shapes;    
-public globals:{};    
+const PlayHead = require("./playHead.js");
+const Shapes = require("./shapes.js");
+const Metal = require("./metal.js");
+module.exports =  class Bilzaa2d {
     constructor() {
         //    this.premades = new Premades();
         this.playHead = new PlayHead();
@@ -42,7 +38,6 @@ public globals:{};
         //     return true;
         // }
     } //play
-   
     drawShapes() {
         //----------the main loop
         this.shapes.forEach(item => {
