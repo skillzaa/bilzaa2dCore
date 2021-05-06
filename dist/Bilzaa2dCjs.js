@@ -575,6 +575,9 @@ class Arc extends BaseShape {
     draw(metal) {
         metal.drawArc(this.attributes);
     } //draw ends
+    heighten(fromSecond = 1, toSecond = 10, from = 100, to = 200) {
+        return this.simpleCounter("width", fromSecond, toSecond, from, to);
+    }
 }
 
 class Text extends BaseShape {
@@ -851,7 +854,7 @@ class Bilzaa2d {
     constructor() {
         //    this.premades = new Premades();
         this.playHead = new PlayHead();
-        this.metal = new Metal();
+       // this.metal = new Metal();
         this.globals = {};
         this.shapes = new Shapes();
     }

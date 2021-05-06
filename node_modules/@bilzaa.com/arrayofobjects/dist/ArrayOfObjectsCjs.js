@@ -1,3 +1,5 @@
+'use strict';
+
 class Validator {
     constructor() {
     } //const
@@ -172,4 +174,4 @@ class ArrayOfObjects {
     }
 }
 
-export default ArrayOfObjects;
+module.exports = ArrayOfObjects;

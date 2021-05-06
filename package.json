@@ -1,6 +1,6 @@
 {
   "name": "bilzaa2d",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A 2d Javascript animation library",
   "main": "./dist/Bilzaa2d.js",
   "scripts": {
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/skillzaa/bilzaa2d#readme",
   "dependencies": {
     "playhead99": "^1.2.0",
-    "shapes99": "^0.3.9"
+    "shapes99": "^0.4.9"
   },
   "devDependencies": {
     "grunt": "^1.4.0",

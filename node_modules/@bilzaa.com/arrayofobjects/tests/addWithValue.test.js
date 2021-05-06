@@ -1,4 +1,4 @@
-const ArrayOfObjects = require('../dist/ArrayOfObjects');
+const ArrayOfObjects = require('../dist/ArrayOfObjectsCjs');
 
 
 const aoo = new ArrayOfObjects();
