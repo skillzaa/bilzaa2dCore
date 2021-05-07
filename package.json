@@ -1,6 +1,6 @@
 {
   "name": "bilzaa2d",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A 2d Javascript animation library",
   "main": "./dist/Bilzaa2d.js",
   "scripts": {
